@@ -156,6 +156,7 @@ hr {
 
 input,
 button {
+  -webkit-appearance: none;
   height: 4em;
   padding: 0 1.5em;
   border: 0;
