@@ -154,17 +154,18 @@ hr {
   width: 100%;
 }
 
-input,
-button {
+input[type='email'],
+input[type='submit'] {
   -webkit-appearance: none;
   height: 4em;
   padding: 0 1.5em;
-  border: 0;
+  border: 1px solid transparent;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0;
 }
 input[type='email'] {
   background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 input[type='submit'] {
   background: #364366;
@@ -260,6 +261,13 @@ input[type='submit']:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+
+  .anchorbutton {
+    padding: 1em;
+  }
+  .anchorbutton > div {
+    padding-left: 10px;
   }
 
   .authors {
