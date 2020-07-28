@@ -23,7 +23,7 @@ body {
 :root {
   --content-width: 780px;
   --lr-padding: 5vw;
-  --section-padding: 80px;
+  --section-padding: 100px;
 }
 
 a,
@@ -61,11 +61,11 @@ a:hover {
   top: 0;
   z-index: 0;
   pointer-events: none;
-  background: #f8ddd4;
+  background: #fae1d9;
   opacity: 0.5;
 }
 .colorsection2:after {
-  background: #e29074;
+  background: #f0cdc3;
 }
 
 nav,
@@ -167,9 +167,18 @@ hr {
   display: grid;
   grid-template-columns: 1fr 200px;
   grid-gap: 20px;
+  margin-bottom: 20px;
 }
 #mc_embed_signup_scroll > * {
   width: 100%;
+}
+
+.sub {
+  opacity: 0.5;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.85em;
+  max-width: 80%;
 }
 
 input[type='email'],
@@ -258,6 +267,37 @@ input[type='submit']:hover {
 .author .bio {
   /* max-width: 280px; */
   margin: 0 auto;
+}
+
+.example {
+  padding: var(--section-padding) 0;
+}
+
+.example .intro {
+  margin: 0 0 70px 0;
+}
+
+.example .sub {
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+.example h3,
+.example h4 {
+  font-family: Menlo, '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic',
+    -apple-system, BlinkMacSystemFont, 'Roboto', 'Droid Sans', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.example h4 {
+  margin-bottom: 2.5em;
+}
+
+.example p {
+  font-size: 0.9em;
+  line-height: 2;
+  margin: 2em 0;
 }
 
 @media (max-width: 767px) {
