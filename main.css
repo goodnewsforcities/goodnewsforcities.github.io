@@ -26,6 +26,10 @@ body {
   --section-padding: 100px;
 }
 
+img {
+  max-width: 100%;
+}
+
 a,
 a:visited,
 a:hover,
@@ -49,6 +53,17 @@ a:hover {
 }
 .bg img {
   width: 100%;
+}
+
+.section-pad {
+  padding: var(--section-padding) 0;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .colorsection:after,
@@ -98,6 +113,12 @@ footer {
   padding: 0 var(--lr-padding);
 }
 
+.gridtwo {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+}
+
 .flexspread {
   display: flex;
   justify-content: space-between;
@@ -110,6 +131,7 @@ footer {
 
 .links {
   padding: 0 3em;
+  margin-bottom: 2em;
   font-weight: bold;
 }
 .links a {
