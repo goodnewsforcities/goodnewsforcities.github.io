@@ -144,6 +144,10 @@ footer {
   align-items: flex-end;
 }
 
+.bottommargin {
+  margin-bottom: 2em !important;
+}
+
 .intro {
   margin-top: 3em;
   margin-bottom: 3em;
